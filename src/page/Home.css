@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+/* Add these styles to your existing styles.css file or create a new CSS file */
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Table header */
+.table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Alternating row colors */
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Table data cells */
+.table td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Hover effect on rows */
+.table tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Link style */
+.table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Link hover style */
+.table a:hover {
+    text-decoration: underline;
+}
+
+#search-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    margin-top: 1.5rem;
+}
+input{
+    padding: 1rem 30rem 1rem .5rem;
+    margin-right: 1rem;
+    outline: 0;
+    border-radius: 1rem;
+    border: .15rem solid black;
+}
+#search{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: 0;
+    outline: 0;
+    background-color: red;
+}
+.empty-state{
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+@media only screen and (max-width: 413px){
+    input{
+        padding: 1rem 10rem 1rem .5rem;
+    }
+    .empty-state{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 360px){
+    input{
+       padding: 1rem 6rem 1rem .5rem;
+    }
+    .empty-state{
+        font-size: 3rem;
+    }
+}
