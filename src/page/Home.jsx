@@ -8,7 +8,7 @@ const Home = () => {
 
     const getData = async () => {
         try {
-            const response = await fetch('https://jubo-cdta-ms.onrender.com/question');
+            const response = await fetch('http://localhost:3001/question');
             if (response.ok) {
                 const data = await response.json();
                 setQuestions(data);
