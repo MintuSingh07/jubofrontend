@@ -1,6 +1,5 @@
 import "../page/Home.css"
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [questions, setQuestions] = useState([]);
